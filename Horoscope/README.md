@@ -1,7 +1,7 @@
-# 🌟 Horoscope Programme
+**🌟 Horoscope Programme**
 
 ## 📜 Description
--A very simple JavaScript project that displays a horoscope sign and a random fortune based on a user's birth month.
+A very simple JavaScript project that displays a horoscope sign and a random fortune based on a user's birth month.
 
 ## 🛠️ How It Works
 -The user’s birth month is matched to the corresponding zodiac sign.
