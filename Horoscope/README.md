@@ -5,7 +5,9 @@
 
 ## 🛠️ How It Works
 -The user’s birth month is matched to the corresponding zodiac sign.
+
 -A random fortune message is selected from a predefined list.
+
 -The result is displayed dynamically on the page using DOM manipulation.
 
 ## 💻 Tech Stack
