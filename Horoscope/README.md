@@ -1,4 +1,4 @@
-**🌟 Horoscope Programme**
+<h1 style="border-bottom: none; margin-bottom: 0;">🌟 Horoscope Programme</h1>
 
 ## 📜 Description
 A very simple JavaScript project that displays a horoscope sign and a random fortune based on a user's birth month.
