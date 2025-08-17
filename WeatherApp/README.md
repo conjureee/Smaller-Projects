@@ -1,7 +1,7 @@
 ## ☀️ Weather App
 
 ### 📜 Description
-A neat little JavaScript based app that fetches and displays real-time weather data for any city you enter.
+A JavaScript and OpenWeather API based app that fetches and displays real-time weather data for any city you enter.
 
 ### 🛠️ How It Works
 - Enter a city name in the input field.
