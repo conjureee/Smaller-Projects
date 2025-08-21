@@ -1,7 +1,7 @@
 ## 🍅 Pomodoro App
 
 ### 📜 Description
-A simple yet effective productivity tool based on the Pomodoro Technique — work in focused intervals with short breaks to maintain energy and focus.
+Quite simple yet effective productivity tool based on the Pomodoro Technique — work in focused intervals with short breaks to maintain energy and focus.
 
 ### 🛠️ How It Works
 - Set your desired work session length (default: 25 minutes).
