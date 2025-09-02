@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="moon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <!-- Adding a few styles just so it looks great -->
+    <style>
+        /* Same styles, less code */
+        body, header {
+            width: 100vw;
+        }
+        footer, body, header, header nav, #menu-flex {
+            display: flex;
+            align-items: center;
+        }
+        main, footer, #menu-flex {
+           justify-content: center; 
+        }
+        header a {
+            text-decoration: none;
+            color: white;
+        }
+        main, body { flex-direction: column; }
+        #menu, #order-form, footer { width: 100%; }
+        /* Individual styles */
+        body {
+            overflow-x: hidden;
+            color: white;
+            background: #1b1b1b;
+            margin: 0;
+            min-height: 100vh;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        header {
+            position: fixed;
+            background-color: #121111;
+            height: 100px;
+            padding: 20px;
+        }
+        header img {
+            height: 100%;
+            margin: 0 20px;
+        }
+        header h1 { font-size: 60px; }
+        header nav {
+            margin-left: auto;
+            width: 30%;
+            justify-content: space-evenly;
+        }
+        header nav a { font-size: 30px; }
+        #line {
+            height: 30px;
+            width: 3px;
+            background-color: #fff;
+        }
+        main {
+            display: flex;
+            min-height: 80vh;
+            margin-top: 140px;
+            width: 75%;
+            background: #242424;
+            padding: 50px;
+        }
+        h4 {
+            margin: 0;
+            margin-top: 20px;
+        }
+        h2 { font-size: 50px; }
+        #menu { min-height: 60%; }
+        #menu-flex { flex-wrap: wrap; }
+        #menu-flex article {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 25px;
+        }
+        article img {
+            width: 100%;
+            height: 100%;
+        }
+        #order-form { min-height: 40%; }
+        textarea {
+            resize: none;
+            overflow: auto;
+        }
+        footer {
+            height: 75px;
+            margin-top: auto;
+            background: #121111;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <img src="moon.png" id="header-img" alt="Preety Moon Logo">
+        <a href="restaurant_menu.html"><h1>Preety Moon</h1></a>
+        <nav>
+            <a href="#menu">Our Menu</a>            
+            <span id="line"></span> <!-- Dividing line -->
+            <a href="#order-form">Place Your Order</a>
+        </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Menu -->
+        <section id="menu">
+            <h2>Menu</h2>
+            <!-- Just to have some great look -->
+            <div id="menu-flex">
+                <!-- Dish 1 -->
+                <article>
+                    <img src="lasagna.png" alt="Cheesy baked lasagna with layers of pasta, meat sauce, and tomato">
+                    <h3>Lasagna</h3>
+                    <p>Classic Italian comfort with layered pasta, rich ragù, silky béchamel, and melted cheese.</p>
+                </article>
+                <!-- Dish 2 -->
+                <article>
+                    <img src="sushi.png" alt="Assorted sushi rolls and nigiri on a wooden board">
+                    <h3>Sushi Platter</h3>
+                    <p>Fresh nigiri and colorful rolls served with soy sauce, wasabi, and pickled ginger.</p>
+                </article>
+                <!-- Dish 3 -->
+                <article>
+                    <img src="paella.png" alt="Seafood paella with shrimp, mussels, and lemon wedges">
+                    <h3>Seafood Paella</h3>
+                    <p>Saffron-infused rice cooked with shrimp, mussels, and peppers for a sunny Spanish feast.</p>
+                </article>
+                <!-- Dish 4 -->
+                <article>
+                    <img src="cheeseburger.jpg" alt="Juicy cheeseburger with lettuce, tomato, and pickles">
+                    <h3>Classic Cheeseburger</h3>
+                    <p>Grilled beef patty topped with cheddar, crisp lettuce, and a soft sesame bun.</p>
+                </article>
+            </div>
+        </section>
+        <!-- Form -->
+        <section id="order-form">
+            <h2>Place Your Order</h2>
+            <form action="#">
+                <!-- Dishes -->
+                <label>Lasagna: <input type="number" id="lasagna-dish" min="0"></label><br>
+                <label>Sushi: <input type="number" id="sushi-dish" min="0"></label><br>
+                <label>Paella: <input type="number" id="paella-dish" min="0"></label><br>
+                <label>Cheeseburger: <input type="number" id="cheeseburger" min="0"></label><br>
+                <!-- Radio Choice -->
+                <h4>Do you want our Special Dessert?</h4>
+                <label><input type="radio" name="choice"> Yes</label>
+                <label><input type="radio" name="choice"> No</label><br><br>
+                <!-- Textarea -->
+                <label>Special requests for <u>Lasagna</u>: <textarea  rows="1" cols="35" placeholder="Write here..."></textarea></label><br><br>
+                <!-- Submit -->
+                <input type="submit" id="submit-input" value="Go To Checkout">
+            </form>
+        </section>
+    </main>
+    <!-- Simple Footer -->
+    <footer>
+        <p>Made with love by @conjure❤️</p>
+    </footer>
+</body>
+</html>
