@@ -1,4 +1,4 @@
-## 🌟 Menu App
+## 🍔 Restaurant Menu App
 ### 📜 Description
 A very simple HTML5 project that displays a restaurant menu with 4 dishes and includes a form for user interaction.
 
